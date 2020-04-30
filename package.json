@@ -1,0 +1,14 @@
+{
+  "name": "shio-gatsby-sample",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ShioCMS/shio-gatsby-sample.git",
+  "author": "Alexandre Oliveira <alexandre.oliveira@sumware.com.br>",
+  "license": "MIT",
+  "dependencies": {
+    "gatsby": "^2.21.7",
+    "gatsby-source-graphql": "^2.5.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
