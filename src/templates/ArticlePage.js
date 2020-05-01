@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 export default ({ data }) => {
-    const article = data.shio.ptArticle[0]
+    const article = data.shio.article
     return (
         <React.Fragment>
             <div>
@@ -17,7 +17,7 @@ export default ({ data }) => {
 export const pageQuery = graphql`
     query($id: ID!) {     
         shio {
-            ptArticle(where : { id: $id }) {
+            article(where : { id: $id }) {
                 title
                 description
             }

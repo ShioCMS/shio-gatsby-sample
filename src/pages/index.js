@@ -4,7 +4,7 @@ import { graphql, useStaticQuery, Link } from "gatsby";
 const pageQuery = graphql`
 {
    shio {
-    ptArticle {
+    articles {
       furl
       title
       text
@@ -15,12 +15,12 @@ const pageQuery = graphql`
 
 const IndexPage = () => {
     const {
-        shio: { ptArticle },
+        shio: { articles },
     } = useStaticQuery(pageQuery);
 
     return (
         <div>
-            {ptArticle.map(({ furl, ...article }) => (
+            {articles.map(({ furl, ...article }) => (
                 <div>
                     <Link key={furl} to={`/article/${furl}`}>
                         {article.title}

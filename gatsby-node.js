@@ -1,12 +1,12 @@
 exports.createPages = async ({ graphql, actions: { createPage } }) => {
     const {
         data: {
-            shio: { ptArticle },
+            shio: { articles },
         },
     } = await graphql(`
     {
         shio {
-            ptArticle {
+            articles {
                 id
                 furl
             }
@@ -14,7 +14,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
     }
     `);
 
-    ptArticle.forEach(({ id, furl }) =>
+    articles.forEach(({ id, furl }) =>
         createPage({
             path: `/article/${furl}`,
             component: require.resolve(`./src/templates/ArticlePage.js`),
