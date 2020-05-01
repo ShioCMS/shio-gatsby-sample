@@ -5,7 +5,10 @@ module.exports = {
             options: {
                 typeName: `ShioCMS`,
                 fieldName: `shio`,
-                url: `http://localhost:2710/graphql`
+                url: `https://shio.viglet.net/graphql`,
+                headers: {
+                    Authorization: `Basic YWRtaW46YWRtaW4=`
+                  }
             },
         },
     ],
