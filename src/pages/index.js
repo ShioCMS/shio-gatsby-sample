@@ -5,7 +5,7 @@ const pageQuery = graphql`
 {
    shio {
     articles {
-      furl
+      _furl
       title
       text
     }
@@ -20,9 +20,9 @@ const IndexPage = () => {
 
     return (
         <div>
-            {articles.map(({ furl, ...article }) => (
+            {articles.map(({ _furl, ...article }) => (
                 <div>
-                    <Link key={furl} to={`/article/${furl}`}>
+                    <Link key={_furl} to={`/article/${_furl}`}>
                         {article.title}
                     </Link>
                 </div>

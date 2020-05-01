@@ -8,15 +8,15 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
         shio {
             articles {
                 id
-                furl
+                _furl
             }
         }
     }
     `);
 
-    articles.forEach(({ id, furl }) =>
+    articles.forEach(({ id, _furl }) =>
         createPage({
-            path: `/article/${furl}`,
+            path: `/article/${_furl}`,
             component: require.resolve(`./src/templates/ArticlePage.js`),
             context: { id: id },
         })
