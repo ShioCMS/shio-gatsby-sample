@@ -6,9 +6,10 @@
   "author": "Alexandre Oliveira <alexandre.oliveira@sumware.com.br>",
   "license": "MIT",
   "dependencies": {
-    "gatsby": "^2.21.7",
-    "gatsby-source-graphql": "^2.5.0",
+    "gatsby": "^2.23.1",
+    "gatsby-source-graphql": "^2.5.3",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "websocket-extensions": ">=0.1.4"
   }
 }
