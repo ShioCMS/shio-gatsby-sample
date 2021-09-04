@@ -13,6 +13,6 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "websocket-extensions": ">=0.1.4",
-    "elliptic":"^6.5.3"
+    "elliptic":"^6.5.4"
   }
 }
